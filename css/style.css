@@ -1,8 +1,133 @@
+footer {position: absolute; bottom: 0;}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
-  background: url('../images/bg-intro-desktop.png'); 
+  background: url('../images/bg-intro-desktop.png'), hsl(0, 100%, 74%); 
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+  width: 1100px;
+  height: 600px;
+  align-items: center;
+}
+
+/* FORM */ 
+form, .form-header {
+  border-radius: 10px;
+}
+
+input[type="text"], button {
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: white;
+  gap: 20px;
+}
+
+.form-header {
+  width: 530px;
+  padding: 2px 0;
+  text-align: center;
+  margin: 25px 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], button {
+  padding: 18px 25px;
+}
+
+/* COLOURS */ 
+
+button {
+  background: hsl(154, 59%, 51%); 
+}
+
+.form-header {
+  background: hsl(248, 32%, 49%); 
+}
+
+h1, p, button {
+  color: white;
+}
+
+form, ::placeholder, .form-footer-span {
+  color: hsl(249, 10%, 26%);
+}
+form p {
+  color: hsl(246, 25%, 77%)
+}
+
+
+/* TEXT */ 
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1;
+  margin: 30px 0;
+}
+
+p {
+  line-height: 1.7; 
+}
+
+p, .form-header > p {
+  font-weight: 400;
+}
+
+.form-header-span {
+  font-weight: 600;
+}
+
+form, .form-footer-span {
+  font-weight: 500;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.left-side > p {
+  width: 500px;
+}
+
+form > p {
+  font-size: 11px;
+  text-align: center;
+  margin: -5px 0 0 0;
+}
+
+::placeholder {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+/* to do: 
+form header, button, and form box-shadow 
+button letter spacing 
+form footer span font weight 
+form input border 
+form input placeholder, and the actual input, font size, colour, font family, font-weight 
+
+
+
+*/
