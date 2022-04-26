@@ -1,0 +1,8 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  background: url('../images/bg-intro-desktop.png'); 
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
