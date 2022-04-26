@@ -27,11 +27,6 @@ form, .form-header {
   border-radius: 10px;
 }
 
-input[type="text"], button {
-  border-radius: 5px;
-  border: 1px solid grey;
-}
-
 form {
   width: 450px;
   display: flex;
@@ -49,7 +44,12 @@ form {
 }
 
 input[type="text"], input[type="email"], input[type="password"], button {
-  padding: 18px 25px;
+  border-radius: 5px;
+  padding: 16px 30px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  border: 1px solid hsl(246, 25%, 77%);
 }
 
 /* COLOURS */ 
@@ -66,11 +66,21 @@ h1, p, button {
   color: white;
 }
 
-form, ::placeholder, .form-footer-span {
+form, input[type="text"], input[type="email"], input[type="password"] {
   color: hsl(249, 10%, 26%);
 }
+
+.form-footer-span {
+  color: hsl(0, 100%, 74%);
+}
+
 form p {
-  color: hsl(246, 25%, 77%)
+  color: hsl(246, 25%, 77%); 
+}
+
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  outline: none;
 }
 
 
@@ -94,13 +104,20 @@ p, .form-header > p {
   font-weight: 600;
 }
 
-form, .form-footer-span {
+form {
   font-weight: 500;
 }
 
 button {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 55px;
+}
+
+
+.form-footer-span {
+  font-weight: 700; 
 }
 
 .left-side > p {
@@ -113,21 +130,23 @@ form > p {
   margin: -5px 0 0 0;
 }
 
-::placeholder {
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
 
+
+input[type="text"], input[type="email"], input[type="password"] {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 
+input[type="text"], input[type="email"], input[type="password"] {
+  font-weight: 700;
+}
 
+button {
+  font-weight: 600;
+  border: none;
+}
 
 /* to do: 
 form header, button, and form box-shadow 
-button letter spacing 
-form footer span font weight 
-form input border 
-form input placeholder, and the actual input, font size, colour, font family, font-weight 
-
-
 
 */
