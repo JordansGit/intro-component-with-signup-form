@@ -22,7 +22,7 @@ h1, p, button {
 h1 {
   font-weight: 700;
   font-size: 50px;
-  line-height: 1.1;
+  line-height: 1.1; 
   margin: 30px 0;
 }
 
@@ -33,7 +33,6 @@ p {
 
 .container {
   display: flex;
-  gap: 20px;
   max-width: 1100px;
   /*height: 600px;*/ 
   align-items: center;
@@ -65,7 +64,7 @@ form {
 .form-header {
   background: hsl(248, 32%, 49%);
   max-width: 530px;
-  padding: 2px 0;
+  padding: 2px 0; 
   text-align: center;
   margin: 0 0 25px 0;
 }
@@ -89,7 +88,7 @@ form p {
 /* INPUT TYPES AND BUTTON */ 
 button, input[type="text"], input[type="email"], input[type="password"] {
   border-radius: 5px;
-  padding: 16px 30px;
+  padding: 15px 30px; 
 }
 
 form, input[type="text"], input[type="email"], input[type="password"] {
@@ -126,6 +125,19 @@ button:hover {
 
 /* need to change at height: 650px, width: 1200px; */ 
 
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1100px;
+    gap: 70px;
+  }
+  .left-side {
+    width: 500px;
+  }
+  .right-side {
+    width: 530px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
 
 }
@@ -144,11 +156,8 @@ button:hover {
   }
 
   body {
-    /* need to change align-items or justify-items to remove gap @ top */ 
     justify-content: flex-start;
   }
-
-  /* maybe add width rule w/ % to h1, p, form-header */
 
   .container {
     margin-top: 35px;
@@ -168,13 +177,11 @@ button:hover {
   }
 
   p {
-    line-height: 1.6;
-    /*width: 271px;*/
     font-size: 15px;
   }
 
   .left-side p {
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
   }
 
   form {
@@ -187,7 +194,7 @@ button:hover {
   }
 
   button, input[type="text"], input[type="email"], input[type="password"] {
-    padding: 14px 30px;
+    padding: 15px 30px;
   }
 
   form p {
@@ -199,6 +206,8 @@ button:hover {
 }
 
 /* to do: 
+maybe refactor code a bit - there are a few extremely minor changes between desktop and mobile site that it seems pointless to have them both. (maybe change from desktop side)
+
 add media queries 
 do the js 
 readme page 
@@ -206,5 +215,6 @@ readme page
 done: 
 add box shadows 
 refactor code
-
+added media query for mobile. 
+refactored abit more. 
 */
