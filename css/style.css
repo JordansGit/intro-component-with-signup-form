@@ -1,7 +1,9 @@
+/* DEFAULT FOOTER */ 
 footer {position: absolute; bottom: 0;}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* GLOBAL */ 
 body {
   background: url('../images/bg-intro-desktop.png'), hsl(0, 100%, 74%); 
   font-family: 'Poppins', sans-serif;
@@ -11,80 +13,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-}
-
-.container {
-  display: flex;
-  gap: 20px;
-  width: 1100px;
-  height: 600px;
-  align-items: center;
-}
-
-/* FORM */ 
-form, .form-header {
-  border-radius: 10px;
-}
-
-form {
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background: white;
-  gap: 20px;
-}
-
-.form-header {
-  width: 530px;
-  padding: 2px 0;
-  text-align: center;
-  margin: 25px 0;
-}
-
-input[type="text"], input[type="email"], input[type="password"], button {
-  border-radius: 5px;
-  padding: 16px 30px;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
-  border: 1px solid hsl(246, 25%, 77%);
-}
-
-/* COLOURS */ 
-
-button {
-  background: hsl(154, 59%, 51%); 
-}
-
-.form-header {
-  background: hsl(248, 32%, 49%); 
 }
 
 h1, p, button {
   color: white;
 }
 
-form, input[type="text"], input[type="email"], input[type="password"] {
-  color: hsl(249, 10%, 26%);
-}
-
-.form-footer-span {
-  color: hsl(0, 100%, 74%);
-}
-
-form p {
-  color: hsl(246, 25%, 77%); 
-}
-
-input:focus {
-  border: 1px solid hsl(249, 10%, 26%);
-  outline: none;
-}
-
-
-/* TEXT */ 
 h1 {
   font-weight: 700;
   font-size: 50px;
@@ -94,59 +28,183 @@ h1 {
 
 p {
   line-height: 1.7; 
-}
-
-p, .form-header > p {
   font-weight: 400;
 }
 
-.form-header-span {
-  font-weight: 600;
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  /*height: 600px;*/ 
+  align-items: center;
+}
+
+
+/* LEFT SIDE TEXT */ 
+.left-side > p {
+  max-width: 500px;
+}
+
+
+/* FORM */ 
+form, .form-header {
+  border-radius: 10px;
+  box-shadow: 0 7px 0 rgba(50, 50, 50, 0.25); 
 }
 
 form {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: white;
+  gap: 20px;
   font-weight: 500;
 }
 
-button {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  height: 55px;
+.form-header {
+  background: hsl(248, 32%, 49%);
+  max-width: 530px;
+  padding: 2px 0;
+  text-align: center;
+  margin: 0 0 25px 0;
 }
 
-
-.form-footer-span {
-  font-weight: 700; 
-}
-
-.left-side > p {
-  width: 500px;
-}
-
-form > p {
+form p {
+  color: hsl(246, 25%, 77%);
   font-size: 11px;
   text-align: center;
   margin: -5px 0 0 0;
 }
+.form-header-span {
+  font-weight: 700;
+}
+
+.form-footer-span {
+  font-weight: 700; 
+  color: hsl(0, 100%, 74%);
+}
 
 
+/* INPUT TYPES AND BUTTON */ 
+button, input[type="text"], input[type="email"], input[type="password"] {
+  border-radius: 5px;
+  padding: 16px 30px;
+}
+
+form, input[type="text"], input[type="email"], input[type="password"] {
+  color: hsl(249, 10%, 26%);
+}
 
 input[type="text"], input[type="email"], input[type="password"] {
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 600;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
-  font-weight: 700;
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  outline: none;
 }
 
 button {
-  font-weight: 600;
+  background: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 55px;
   border: none;
+  box-shadow: 0 3px 1px hsl(154, 59%, 46%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */ 
+
+/* need to change at height: 650px, width: 1200px; */ 
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 990px) {
+
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  body, .container {
+    flex-direction: column;
+  }
+
+  body {
+    /* need to change align-items or justify-items to remove gap @ top */ 
+    justify-content: flex-start;
+  }
+
+  /* maybe add width rule w/ % to h1, p, form-header */
+
+  .container {
+    margin-top: 35px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+   
+  h1 {
+    font-size: 26px;
+    margin: 20px 0;
+    line-height: 1.3;
+  }
+
+  p {
+    line-height: 1.6;
+    /*width: 271px;*/
+    font-size: 15px;
+  }
+
+  .left-side p {
+    margin: 0 0 40px 0;
+  }
+
+  form {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .form-header {
+    padding: 3px 50px;
+  }
+
+  button, input[type="text"], input[type="email"], input[type="password"] {
+    padding: 14px 30px;
+  }
+
+  form p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2;
+    margin-top: -5px;
+  }
 }
 
 /* to do: 
-form header, button, and form box-shadow 
+add media queries 
+do the js 
+readme page 
+
+done: 
+add box shadows 
+refactor code
 
 */
