@@ -123,34 +123,38 @@ button:hover {
 
 /* MEDIA QUERIES */ 
 
-/* need to change at height: 650px, width: 1200px; */ 
-
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1100px;
     gap: 70px;
   }
   .left-side {
-    width: 500px;
+    width: 510px;
   }
   .right-side {
-    width: 530px;
+    width: 520px;
   }
 }
 
-@media only screen and (max-width: 1199px) {
-
+@media only screen and (min-width: 901px) and (max-width: 1199px) {
+  body {
+    margin: 0 40px;
+  }
+  .container {
+    max-width: 1000px;
+    gap: 50px;
+    justify-content: center;
+  }
+  .left-side {
+    width: 45%;
+  }
+  .right-side {
+    width: 45%;
+    min-width: 400px;
+  }
 }
 
-@media only screen and (max-width: 990px) {
-
-}
-
-@media only screen and (max-width: 770px) {
-
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   body, .container {
     flex-direction: column;
   }
@@ -171,17 +175,17 @@ button:hover {
   }
    
   h1 {
-    font-size: 26px;
+    font-size: 40px;
     margin: 20px 0;
     line-height: 1.3;
   }
 
   p {
-    font-size: 15px;
+    margin: 0 auto;
   }
 
   .left-side p {
-    margin: 0 0 35px 0;
+    margin-bottom: 35px;
   }
 
   form {
@@ -205,16 +209,38 @@ button:hover {
   }
 }
 
-/* to do: 
-maybe refactor code a bit - there are a few extremely minor changes between desktop and mobile site that it seems pointless to have them both. (maybe change from desktop side)
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .left-side {
+    padding: 0 20px;
+  }
+}
 
-add media queries 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+/* to do: 
 do the js 
-readme page 
+add screenshots to readme page 
+add media queries for height. 
+ -> if height is small, change footer absolute to none. 
+ -> maybe remove top margins. 
+
+maybe refactor media queries. 
+
+- in future need to learn the optimal way of design responsive websites because this doesn't seem like the best way. 
 
 done: 
 add box shadows 
 refactor code
 added media query for mobile. 
 refactored abit more. 
+finished full responsive design. 
 */
+
+/* need to watch a yt tut for rwd / media queries for best practices, so this doesn't take so much time. */ 
