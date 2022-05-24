@@ -28,9 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop 
 ![Desktop Screenshot](./screenshots/desktop-screenshot.png)
+
+Active States
 ![Desktop - Active States](./screenshots/desktop-active-screenshot.png)
+
+Tablet
 ![Tablet Screenshot](./screenshots/tablet-screenshot.png)
+
+Mobile
 ![Mobile Screenshot](./screenshots/mobile-screenshot.png)
 
 
