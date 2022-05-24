@@ -28,11 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![Desktop Screenshot](./desktop-screenshot.jpg)
-![Tablet Screenshot](./desktop-screenshot.jpg)
-![Mobile Screenshot](./desktop-screenshot.jpg)
-![Desktop - Active States](./desktop-screenshot.jpg)
+![Desktop Screenshot](./screenshots/desktop-screenshot.png)
+![Desktop - Active States](./screenshots/desktop-active-screenshot.png)
+![Tablet Screenshot](./screenshots/tablet-screenshot.png)
+![Mobile Screenshot](./screenshots/mobile-screenshot.png)
 
 
 

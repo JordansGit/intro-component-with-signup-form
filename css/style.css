@@ -1,7 +1,7 @@
-/* DEFAULT FOOTER */ 
+/* DEFAULT FOOTER */ /*
 footer {position: absolute; bottom: 0;}
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }*/
 
 /* GLOBAL */ 
 body {
@@ -34,8 +34,19 @@ p {
 .container {
   display: flex;
   max-width: 1100px;
-  /*height: 600px;*/ 
   align-items: center;
+}
+
+.icon {
+  color:hsl(0, 100%, 74%); 
+  position: relative;
+  display: none;
+}
+
+.icon i {
+  position: absolute;
+  right: 25px;
+  bottom: 27px;
 }
 
 
@@ -84,18 +95,23 @@ form p {
   color: hsl(0, 100%, 74%);
 }
 
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* INPUT TYPES AND BUTTON */ 
-button, input[type="text"], input[type="email"], input[type="password"] {
+button, input {  
   border-radius: 5px;
   padding: 15px 30px; 
 }
 
-form, input[type="text"], input[type="email"], input[type="password"] {
+form, input {   
   color: hsl(249, 10%, 26%);
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input {  
   border: 1px solid hsl(246, 25%, 77%);
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -105,6 +121,15 @@ input[type="text"], input[type="email"], input[type="password"] {
 input:focus {
   border: 1px solid hsl(249, 10%, 26%);
   outline: none;
+}
+
+.error-msg {
+  text-align: right;
+  color: hsl(0, 100%, 74%); 
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 button {
@@ -119,7 +144,9 @@ button {
 
 button:hover {
   cursor: pointer;
+  background: hsl(154, 59%, 65%)
 }
+
 
 /* MEDIA QUERIES */ 
 
@@ -197,7 +224,7 @@ button:hover {
     padding: 3px 50px;
   }
 
-  button, input[type="text"], input[type="email"], input[type="password"] {
+  button, input {  
     padding: 15px 30px;
   }
 
@@ -224,23 +251,10 @@ button:hover {
   }
 }
 
+
 /* to do: 
 do the js 
 add screenshots to readme page 
-add media queries for height. 
- -> if height is small, change footer absolute to none. 
- -> maybe remove top margins. 
 
-maybe refactor media queries. 
-
-- in future need to learn the optimal way of design responsive websites because this doesn't seem like the best way. 
-
-done: 
-add box shadows 
-refactor code
-added media query for mobile. 
-refactored abit more. 
-finished full responsive design. 
+deleted this footer as it was causing too much annoyances on specfic heights on widths. want to focus on the js. 
 */
-
-/* need to watch a yt tut for rwd / media queries for best practices, so this doesn't take so much time. */ 
