@@ -38,6 +38,7 @@ Tablet
 ![Tablet Screenshot](./screenshots/tablet-screenshot.png)
 
 Mobile
+
 ![Mobile Screenshot](./screenshots/mobile-screenshot.png)
 
 
