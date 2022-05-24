@@ -35,6 +35,7 @@ Active States
 ![Desktop - Active States](./screenshots/desktop-active-screenshot.png)
 
 Tablet
+
 ![Tablet Screenshot](./screenshots/tablet-screenshot.png)
 
 Mobile
